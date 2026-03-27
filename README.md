@@ -2,9 +2,9 @@
 
 
 
-\## 📌 Project Overview
+\## 🚀 Project Overview
 
-This project is designed to reduce AWS cloud costs by automatically monitoring and managing EC2 instances. It identifies running instances and shuts down unused resources to prevent unnecessary billing.
+This project automates AWS cost optimization by intelligently monitoring EC2 instances and shutting down idle resources based on CPU utilization.
 
 
 
@@ -12,15 +12,17 @@ This project is designed to reduce AWS cloud costs by automatically monitoring a
 
 
 
-\## 🚀 Features
+\## 🔥 Key Features
 
-\- ✅ Automatic shutdown of idle EC2 instances
+\- CPU-based EC2 auto shutdown using CloudWatch
 
-\- ✅ AWS cost monitoring using Cost Explorer
+\- Intelligent decision making (<5% CPU threshold)
 
-\- ✅ Helps reduce unnecessary cloud expenses
+\- Real-time AWS monitoring
 
-\- ✅ Beginner-friendly cloud automation project
+\- Email alerts using SNS
+
+\- Logging system for tracking activity
 
 
 
@@ -30,13 +32,13 @@ This project is designed to reduce AWS cloud costs by automatically monitoring a
 
 \## 🛠️ Technologies Used
 
-\- Python
+\- Python (boto3)
 
 \- AWS EC2
 
-\- AWS Cost Explorer
+\- AWS CloudWatch
 
-\- Boto3 (AWS SDK)
+\- AWS SNS
 
 \- Git \& GitHub
 
@@ -48,25 +50,17 @@ This project is designed to reduce AWS cloud costs by automatically monitoring a
 
 \## ⚙️ How It Works
 
+1\. Fetch EC2 instances
 
+2\. Get CPU usage from CloudWatch
 
-\### 1. EC2 Auto Shutdown
+3\. Identify idle instances (<5% CPU)
 
-\- Fetches all EC2 instances
+4\. Stop instance automatically
 
-\- Checks their current state
+5\. Send alert notification
 
-\- Stops instances that are running (to save cost)
-
-
-
-\### 2. Cost Monitoring
-
-\- Connects to AWS Cost Explorer
-
-\- Retrieves monthly cost usage
-
-\- Displays cost details
+6\. Log activity
 
 
 
@@ -76,15 +70,13 @@ This project is designed to reduce AWS cloud costs by automatically monitoring a
 
 \## 📂 Project Structure
 
-
-
 AI-Cloud-Cost-Optimizer/
 
-├── README.md  
+├── README.md
 
-├── ec2\_auto\_shutdown.py  
+├── ec2\_auto\_shutdown.py
 
-├── cost\_monitor.py  
+├── cost\_monitor.py
 
 
 
@@ -92,9 +84,21 @@ AI-Cloud-Cost-Optimizer/
 
 
 
-\## ▶️ How to Run
+\## 🎯 Outcome
+
+Reduced AWS cloud costs by automatically stopping unused EC2 instances.
 
 
 
-\### Step 1: Install dependencies
+\---
+
+
+
+\## 🔮 Future Scope
+
+\- AI-based cost prediction
+
+\- Dashboard visualization
+
+\- Automated scheduling system
 
